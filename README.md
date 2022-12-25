@@ -1,6 +1,6 @@
-## Core keybinds
+## Core keybindings
 
-1. `nnn`: <ESC>
+1. `nnn`: \<ESC\>
 2. `x`: deleting without copying to the register
 3. `<leader>sv`: split window vertically
 4. `<leader>sh`: splits window horizontally
