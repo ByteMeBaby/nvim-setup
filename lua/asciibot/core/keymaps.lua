@@ -2,14 +2,13 @@ vim.g.mapleader = " "
 
 local km = vim.keymap
 
-km.set("i", "nnn", "<ESC>") -- equals to esc
+km.set("i", "vv", "<ESC>") -- equals to esc
 km.set("n", "x", '"_x') -- deleting does not copy into the register
 
 km.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 km.set("n", "<leader>sh", "<C-w>s") -- splits window horizontally
 km.set("n", "<leader>se", "<C-w>=") -- reverse windows sizes to have equal width & height
 km.set("n", "<leader>sx", ":close<CR>") -- closes current split window
-
 
 km.set("n", "<leader>to", ":tabnew<CR>") -- opens a new tab
 km.set("n", "<leader>tx", ":tabclose<CR>") -- closes the current tab
@@ -18,7 +17,8 @@ km.set("n", "<leader>tp", ":tabp<CR>") --  goes to the previous tab
 km.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- maximize the current tab and reset it to original
 
 km.set("n", "<leader>e", ":NvimTreeToggle<CR>")
-
+km.set("n", "<leader>ef", ":NvimTreeFindFile<CR>") --nvim-tree to focus on the current file
+km.set("n", "<leader>ee", ":NvimTreeFocus<CR>") -- set nvim-tree to focus on tree
 km.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
 km.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
 km.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
